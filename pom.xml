@@ -4,6 +4,23 @@
   <artifactId>CES-Automation</artifactId>
   <version>1.0.1</version>
 
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<useSystemClassLoader>false</useSystemClassLoader>
+					<suiteXmlFiles>
+						<suiteXmlFile>SuitesXML/testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -32,6 +49,14 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.1.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>7.6.0</version>
 		</dependency>
 
 
@@ -87,6 +112,21 @@
 	            <artifactId>javacv-platform</artifactId>
 	            <version>1.5.3</version>
 	    </dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.32</version>
+			<scope>compile</scope>
+		</dependency>
+
+	<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+		</dependency>
+
 	</dependencies>
 
 
