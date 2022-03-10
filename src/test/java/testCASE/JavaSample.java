@@ -3,27 +3,18 @@ package testCASE;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.JavascriptExecutor;
-import java.net.URL;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-public class JavaSample {
-  public static final String AUTOMATE_USERNAME = "****";
-  public static final String AUTOMATE_ACCESS_KEY = "*****";
-  public static final String URL = "https://" + AUTOMATE_USERNAME + ":" + AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-  @SuppressWarnings("deprecation")
-public static void main(String[] args) throws Exception {
-    DesiredCapabilities caps = new DesiredCapabilities();
-    caps.setCapability("os_version", "10");
-    caps.setCapability("resolution", "1920x1080");
-    caps.setCapability("browser", "Chrome");
-    caps.setCapability("browser_version", "latest");
-    caps.setCapability("os", "Windows");
-    caps.setCapability("name", "BStack-[Java] Sample Test"); // test name
-    caps.setCapability("build", "BStack Build Number 1"); // CI/CD job or build name
-    final WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+import org.testng.annotations.Test;
+
+import util.Base.TestBase;
+public class JavaSample extends TestBase{
+
+@SuppressWarnings("deprecation")
+@Test
+public void browserStackDemo1() {
+	BSDriver bsDriver = new BSDriver();
+    final WebDriver driver = bsDriver.getDriver();
     try {
       driver.get("https://bstackdemo.com/");
       final WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -40,16 +31,11 @@ public static void main(String[] args) throws Exception {
       final String product_in_cart = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\'__next\']/div/div/div[2]/div[2]/div[2]/div/div[3]/p[1]"))).getText();
       // verifying whether the product added to cart is available in the cart
       if (product_name.equals(product_in_cart)) {
-        markTestStatus("passed", "Product has been successfully added to the cart!", driver);
+    	  bsDriver.markTestStatus("passed", "Product has been successfully added to the cart!", driver);
         }
       } catch (Exception e) {
-          markTestStatus("failed", "Some elements failed to load", driver);
+    	  bsDriver.markTestStatus("failed", "Some elements failed to load", driver);
         }
       driver.quit();
-    }
-  // This method accepts the status, reason and WebDriver instance and marks the test on BrowserStack
-  public static void markTestStatus(String status, String reason, WebDriver driver) {
-    final JavascriptExecutor jse = (JavascriptExecutor) driver;
-    jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \""+ status + "\", \"reason\": \"" + reason + "\"}}");
-  }
+}
 } 
