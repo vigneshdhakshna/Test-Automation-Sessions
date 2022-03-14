@@ -21,11 +21,7 @@ public class TestCaseDemo1 extends TestBase{
 	@Author(Name = "Vignesh")
 	@Test()
 	public void demo2TC() {
-		String webURL = "https://www.google.com/";
-		SeleniumUtil selenium = Selenium(webURL);
-		selenium.Log(selenium.getTitle());
-		selenium.pageScreenShot();
-
+	System.out.println("sample");
 }
 	
 }
