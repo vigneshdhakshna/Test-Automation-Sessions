@@ -1,13 +1,9 @@
 package testCASE;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
-
 import config.TestNG.Author;
 import util.Base.TestBase;
 import util.Common.SeleniumUtil;
