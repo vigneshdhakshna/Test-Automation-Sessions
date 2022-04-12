@@ -2,7 +2,7 @@ package testCASE;
 
 public class javaSample {
 	public static void main(String[] args) {
-		Fibonacci(10);
+		primeNumber(9);
 	}
 	
 	public static void Fibonacci(int num) {
@@ -19,5 +19,43 @@ public class javaSample {
             nextNumber = sum;
         }
 	}
+	
+	public static void palinDrome(int num) {
+		int temp = num;
+		
+		int rev = 0;
+		 while (num >0) {
+			 int p = num%10;
+			 rev = rev*10 + p;
+			 num = num /10;
+		 }
+		 
+		 if (temp == rev) {
+			 System.out.println(temp +" is Palindrome");
+		 }else {
+			 System.out.println(temp +" is Not Palindrome");
+
+		 }
+	}
+	
+	public static void primeNumber(int num) {
+        boolean flag = false;
+        int div=0;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            if(num % i == 0)
+            {
+                flag = true;
+                div=i;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number. divided by : "+div);
+	}
+
 
 }
