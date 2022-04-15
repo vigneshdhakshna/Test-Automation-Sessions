@@ -2,7 +2,7 @@ package testCASE;
 
 public class javaSample {
 	public static void main(String[] args) {
-		primeNumber(9);
+		palinDrome("vavs");
 	}
 	
 	public static void Fibonacci(int num) {
@@ -38,6 +38,23 @@ public class javaSample {
 		 }
 	}
 	
+	public static void palinDrome(String name) {
+		boolean result = true;
+		int length = name.length();
+		for(int i=0; i < length/2; i++) {
+			if(name.charAt(i) != name.charAt(length-i-1)) {
+				result = false;
+				break;
+			}
+		}
+		 if (result) {
+			 System.out.println(name +" is Palindrome");
+		 }else {
+			 System.out.println(name +" is Not Palindrome");
+
+		 }
+	}
+	
 	public static void primeNumber(int num) {
         boolean flag = false;
         int div=0;
@@ -57,5 +74,21 @@ public class javaSample {
             System.out.println(num + " is not a prime number. divided by : "+div);
 	}
 
+	public static void swapTwoVariable(int num1, int num2) {
+		System.out.println("Before");
 
+		System.out.println("Num 1 : " + num1);
+		System.out.println("Num 2 : " + num2);
+		
+		num2 = num1 + num2;
+		num1 = num2 - num1;
+		num2 = num2 - num1;
+		
+		System.out.println("After");
+
+		System.out.println("Num 1 : " + num1);
+		System.out.println("Num 2 : " + num2);
+
+		
+	}
 }
