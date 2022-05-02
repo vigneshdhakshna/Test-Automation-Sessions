@@ -1,11 +1,16 @@
 package testCASE;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class javaSample {
 	public static void main(String[] args) {
-		palinDrome("vavs");
+		int arr1[] = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
+		sampleTry();
 	}
 	
-	public static void Fibonacci(int num) {
+	public static void fibonacci(int num) {
 		 int previousNumber = 0;
 		 int nextNumber = 1;
 		 
@@ -20,7 +25,7 @@ public class javaSample {
         }
 	}
 	
-	public static void palinDrome(int num) {
+	public static void palindrome(int num) {
 		int temp = num;
 		
 		int rev = 0;
@@ -38,7 +43,7 @@ public class javaSample {
 		 }
 	}
 	
-	public static void palinDrome(String name) {
+	public static void palindrome(String name) {
 		boolean result = true;
 		int length = name.length();
 		for(int i=0; i < length/2; i++) {
@@ -91,4 +96,136 @@ public class javaSample {
 
 		
 	}
+	
+	public static void sortArray(int[] arr) {
+		
+		int[] tArr = arr.clone();
+		for (int i = 0; i < arr.length; i++)   
+		{  
+			if (arr[i]<0) {
+				arr[i] = arr[i]*-1;
+			}
+		}
+	
+		
+		for (int i = 0; i < arr.length; i++)   
+		{  
+		for (int j = i + 1; j < arr.length; j++)   
+		{  
+		int tmp = 0;  
+		if (arr[i] > arr[j])   
+		{  
+		tmp = arr[i];  
+		arr[i] = arr[j];  
+		arr[j] = tmp;  
+		}  
+		}  
+		}  
+		
+		for (int i = 0; i < tArr.length; i++)   
+		{ 
+			if (tArr[i]<0) {
+				
+					for (int j = 0; j < arr.length; j++)   
+					{
+						if (tArr[i]*-1 == arr[j]) {
+							arr[j] = arr[j]*-1;
+							break;
+					}
+				}
+			}
+		}
+		
+		for (int i = 0; i < arr.length; i++)   
+		{
+			System.out.println(arr[i]);  
+		}
+		
+		
+}
+	
+	public static void factorial (int num) {
+		int temp = 1;
+		for ( int i = 1 ; i<=num ; i++) {
+			temp = temp *i;
+			
+		}
+		System.out.println(temp);  
+
+	}
+	
+	public static void anagram (String s1, String s2) {
+		
+		if (s1.length() == s2.length()) {
+			boolean flag = true;
+			char[] s1Array = s1.toCharArray();
+			char[] s2Array = s2.toCharArray();
+			
+			Arrays.sort(s1Array);
+			Arrays.sort(s2Array);
+
+			 for (int i = 0; i < s1Array.length; i++) {
+		            if (s1Array[i] != s2Array[i]) {
+		            	flag = false;
+		            break;
+			 }
+			 }
+			 if (flag == true) {
+		     		System.out.println(s1+" - "+s2+" is Anagram");  
+			 }else {
+		    		System.out.println(s1+" - "+s2+" Not Anagram");  
+			 }
+
+		}
+		else {
+    		System.out.println(s1+" - "+s2+" Not Anagram");  
+		}
+		
+	}
+	
+	public static void pyramidPattern(int num) {
+		for ( int i = 1 ; i<=num ; i++) {
+			
+			for ( int j = 1 ; j<=num-i ; j++) {
+				System.out.print(" ");
+			}
+			for ( int k = 1 ; k<=i ; k++) 	  {
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+	}
+	public static void duplicate(String str) {
+		
+		
+		char[] charArray = str.toCharArray();
+		Set<Character> asSet = new HashSet<Character>();
+		
+		for ( char c : charArray) {
+			
+			asSet.add(c);
+		}
+
+
+		for ( char c : asSet) {
+			int count  = 0;
+			for (int i = 0; i < charArray.length ; i++) {
+				if ( c == charArray[i]) {
+					count++;
+				}
+			}
+			if ( count > 1) {
+				System.out.println(c + " - "+ count);	
+			}
+		}
+		
+			
+	}
+	
+	public static void sampleTry() {
+		int a =6;
+		String name  = (a == 6) ? "Six" : "Other";
+		System.out.println(name);
+	}
+	
 }

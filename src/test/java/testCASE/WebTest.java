@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.testproject.sdk.drivers.web.ChromeDriver;
 
 public final class WebTest {
 
