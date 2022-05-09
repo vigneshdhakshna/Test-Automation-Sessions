@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class javaSample {
 	public static void main(String[] args) {
-		int arr1[] = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
-		sampleTry();
+		//int arr1[] = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
+		swapTwoVariable(1,-2);
 	}
 	
 	public static void fibonacci(int num) {
