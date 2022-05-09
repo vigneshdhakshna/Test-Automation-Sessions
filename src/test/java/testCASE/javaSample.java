@@ -7,7 +7,7 @@ import java.util.Set;
 public class javaSample {
 	public static void main(String[] args) {
 		//int arr1[] = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
-		swapTwoVariable(1,-2);
+		pyramidPattern("p",10);
 	}
 	
 	public static void fibonacci(int num) {
@@ -183,14 +183,14 @@ public class javaSample {
 		
 	}
 	
-	public static void pyramidPattern(int num) {
+	public static void pyramidPattern(String symbol,int num) {
 		for ( int i = 1 ; i<=num ; i++) {
 			
 			for ( int j = 1 ; j<=num-i ; j++) {
 				System.out.print(" ");
 			}
 			for ( int k = 1 ; k<=i ; k++) 	  {
-				System.out.print("* ");
+				System.out.print(symbol+" ");
 			}
 			System.out.println("");
 		}
