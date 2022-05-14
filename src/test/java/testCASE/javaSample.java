@@ -5,9 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class javaSample {
+	
 	public static void main(String[] args) {
-		int arr1[] = {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
-		// { -1,1,3,-4,6,20,34,34,55,-65,78,90 }
+		int arr1[] = {78,34,1,3,90,34,-1,-4,6,55,20,-65};
+		// {-1,1,3,-4,6,20,34,34,55,-65,78,90}
 		sortArray(arr1);
 	}
 	
