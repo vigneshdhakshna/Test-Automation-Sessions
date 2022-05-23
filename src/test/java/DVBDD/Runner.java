@@ -1,20 +1,24 @@
 package DVBDD;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import org.testng.annotations.Test;
 
-import util.Base.TestBase;
-import util.Common.SeleniumUtil;
-
-public class Runner extends TestBase{
+public class Runner {
 	
 	@Test()
-	public void test1() {
-		String webURL ="https://www.yahoo.com/";
-		SeleniumUtil selenium = Selenium(webURL);
-		
-		Readers readers = new Readers(Path.fileFromTextTestData("sample.kmdv"));
-		readers.runSteps();
-	}
+	public void test1() throws IOException {
+		Path fileName = Path.of("src/test/resources/TestData/Text/sample.kmdv");
+        String str = Files.readString(fileName);	
+        String[] split = str.split("\n");
+        for (String strs : split) {
+        	System.out.println(strs);
+        	System.out.println(" ---");
+			
+		}
+    	}
 	
 
 }
