@@ -2,16 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T23:35:33 IST" name="Default suite" finished-at="2022-05-18T23:35:33 IST" duration-ms="80">
+  <suite started-at="2022-06-01T16:30:33 IST" name="Default suite" finished-at="2022-06-01T16:30:34 IST" duration-ms="1118">
     <groups>
     </groups>
-    <test started-at="2022-05-18T23:35:33 IST" name="Default test" finished-at="2022-05-18T23:35:33 IST" duration-ms="80">
-      <class name="DVBDD.Runner">
-        <test-method signature="test1()[pri:0, instance:DVBDD.Runner@5a7fe64f]" started-at="2022-05-18T23:35:33 IST" name="test1" finished-at="2022-05-18T23:35:33 IST" duration-ms="19" status="PASS">
+    <test started-at="2022-06-01T16:30:33 IST" name="Default test" finished-at="2022-06-01T16:30:34 IST" duration-ms="1118">
+      <class name="testCASE.TestCaseDemo1">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:testCASE.TestCaseDemo1@18317edc]" started-at="2022-06-01T16:30:33 IST" name="initialize" finished-at="2022-06-01T16:30:33 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- DVBDD.Runner -->
+        </test-method> <!-- initialize -->
+        <test-method signature="demoWEB()[pri:0, instance:testCASE.TestCaseDemo1@18317edc]" started-at="2022-06-01T16:30:33 IST" name="demoWEB" finished-at="2022-06-01T16:30:34 IST" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoWEB -->
+        <test-method is-config="true" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:testCASE.TestCaseDemo1@18317edc]" started-at="2022-06-01T16:30:34 IST" name="quitBrowser" finished-at="2022-06-01T16:30:34 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=demoWEB status=SUCCESS method=TestCaseDemo1.demoWEB()[pri:0, instance:testCASE.TestCaseDemo1@18317edc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCASE.TestCaseDemo1@18317edc]" started-at="2022-06-01T16:30:34 IST" name="tearDown" finished-at="2022-06-01T16:30:35 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCASE.TestCaseDemo1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
