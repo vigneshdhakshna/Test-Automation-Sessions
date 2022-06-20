@@ -1,6 +1,7 @@
 package testCASE;
 
 import java.io.FileOutputStream;
+import java.lang.reflect.Method;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -31,6 +32,22 @@ public class TestCaseDemo1 extends TestBase{
 		
 	}
 	
+	public void sampleMEthod(String name) {
+		System.out.println("Ohya "+name);
+	}
 	
+	@Test
+	public void demo2() throws Throwable {
+		
+		Class<?> cls = Class.forName("testCASE.javaSample");
+		
+		Method[] declaredMethods = cls.getDeclaredMethods();
+		for (Method method : declaredMethods) {
+			if (method.getName().equalsIgnoreCase("palindrome")) {
+				method.invoke(this,"aba");
+				break;
+				}
+			}
+	}
 
 }

@@ -1,0 +1,2 @@
+|FindAll--> 		${searchBox12} 		:{XPATH}		#{//input[@name='r']} 
+|Find--> 			${searchBox21} 		:{ID}			#{id_231} 	

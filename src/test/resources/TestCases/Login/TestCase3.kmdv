@@ -1,0 +1,7 @@
+(Tags::Tag3)
+
+
+|Open--> 	:{chrome}				${constants.Url} 
+|Click--> 	${page3.searchBox123}
+|Click--> 	${page3.searchBox321}
+|Close-->

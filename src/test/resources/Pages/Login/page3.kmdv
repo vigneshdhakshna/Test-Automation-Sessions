@@ -1,0 +1,2 @@
+|FindAll--> 		${searchBox123} 		:{LINKTEXT}		#{linkNames2} 
+|Find--> 			${searchBox321} 		:{ID}			#{id_321} 	
