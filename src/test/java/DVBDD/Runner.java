@@ -16,8 +16,7 @@ public class Runner extends TestObject {
 	
 	
 	public static void main(String[] args) {
-		HandleMethods HandleMethods = new HandleMethods();
-		HandleMethods.run();
+		HandleMethods.run("test2");
 	}
 
 }

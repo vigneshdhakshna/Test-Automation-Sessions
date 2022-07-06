@@ -9,7 +9,7 @@ import java.util.Set;
 public class javaSample {
 
 	public static void main(String[] args) {
-		 int arr1[] = {78,34,2,-3,90,34,-1,-4,6,55,20,-65};
+		int arr1[] = { 78, 34, 2, -3, 90, 34, -1, -4, 6, 55, 20, -65 };
 		// {-1,1,3,-4,6,20,34,34,55,-65,78,90}
 		// sortArrayM(arr1);
 //		int a = 1;
@@ -20,14 +20,31 @@ public class javaSample {
 //
 //		System.out.println(a--);
 //		System.out.println(--a);
-		
-		simpleSort(arr1);
-		
+
+		compare2Strings("fun Hello fun", "fun World fun");
 
 	}
-	
 
+	public static void compare2Strings(String s1, String s2) {
+		
+		String[] split1 = s1.split("\\s");
+		String[] split2 = s2.split("\\s");
+		String output ="";
+		
+		for (String sp1 : split1) {
+			if(!s2.contains(sp1)) {
+				output = output+sp1+" ";
+			}
+		}
+		
+		for (String sp2 : split2) {
+			if(!s1.contains(sp2)) {
+				output = output+sp2+" ";
+			}
+		}
 
+		System.out.println(output.trim());
+	}
 	public static void fibonacci(int num) {
 		int previousNumber = 0;
 		int nextNumber = 1;
@@ -149,6 +166,31 @@ public class javaSample {
 
 	}
 
+	public static void simpleSort(int[] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				int a = arr[i], b = arr[j];
+				if (a < 0) {
+					a = a * -1;
+				}
+				if (b < 0) {
+					b = b * -1;
+				}
+				int tmp = 0;
+				if (a > b) {
+					tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+				}
+			}
+		}
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
 	public static void sortArrayM(int[] arr) {
 
 		int[] tArr = arr.clone();
@@ -252,57 +294,30 @@ public class javaSample {
 		}
 
 	}
-	
+
 	public static void duplicate2(String str) {
 
 		char[] charArray = str.toCharArray();
 		HashMap<Character, Integer> charMap = new HashMap<Character, Integer>();
 
 		for (char c : charArray) {
-			
+
 			if (charMap.containsKey(c)) {
 				Integer count = charMap.get(c);
-				charMap.put(c, count+1);
-				
-			}else {
+				charMap.put(c, count + 1);
+
+			} else {
 				charMap.put(c, 1);
 			}
 
 		}
-		
-		
-		for (Entry<Character, Integer> c: charMap.entrySet()) {
-			if(c.getValue()>2) {
-			System.out.println(c);
-		}
-		}
-		
 
-	}
-
-	public static void simpleSort(int[] arr) {
-		
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = i + 1; j < arr.length; j++) {
-				int a = arr[i], b = arr[j];
-				if(a<0) {
-					a =a *-1;
-				}
-				if(b<0) {
-					b =b *-1;
-				}
-				int tmp = 0;
-				if (a > b) {
-					tmp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = tmp;
-				}
+		for (Entry<Character, Integer> c : charMap.entrySet()) {
+			if (c.getValue() > 2) {
+				System.out.println(c);
 			}
 		}
-		
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
-		}
+
 	}
 
 }
