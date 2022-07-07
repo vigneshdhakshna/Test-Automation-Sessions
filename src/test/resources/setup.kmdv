@@ -1,0 +1,4 @@
+PageDir ={src/test/resources/Pages}
+TestCaseDir ={src/test/resources/TestCases}
+Parallel ={1}
+Tags ={}

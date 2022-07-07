@@ -21,7 +21,7 @@ public class javaSample {
 //		System.out.println(a--);
 //		System.out.println(--a);
 
-		compare2Strings("fun Hello fun", "fun World fun");
+		compare2Strings("fun Hello fun", "fun W fun");
 
 	}
 
