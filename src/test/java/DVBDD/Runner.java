@@ -2,9 +2,10 @@ package DVBDD;
 
 import org.testng.annotations.Test;
 
-import common.TestObject;
+import common.TestBase;
 
-public class Runner extends TestObject {
+
+public class Runner extends TestBase {
 	
 	@Test(dataProvider = "path")
 	public void testCases(String path) {
