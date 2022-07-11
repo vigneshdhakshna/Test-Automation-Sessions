@@ -1,4 +1,0 @@
-open "https://www.google.com/" 
-title "Google"
-type "//input[@name='q']" "Vignesh Dhesna"
-wait "2"
