@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-11T16:29:43 IST" name="Default suite" finished-at="2022-07-11T16:29:50 IST" duration-ms="7184">
+  <suite started-at="2022-07-11T16:32:06 IST" name="Default suite" finished-at="2022-07-11T16:32:13 IST" duration-ms="7450">
     <groups>
     </groups>
-    <test started-at="2022-07-11T16:29:43 IST" name="Default test" finished-at="2022-07-11T16:29:50 IST" duration-ms="7184">
-      <class name="DVBDD.Runner">
-        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:DVBDD.Runner@2cb2fc20]" started-at="2022-07-11T16:29:43 IST" name="setupClassName" finished-at="2022-07-11T16:29:43 IST" duration-ms="13" status="PASS">
+    <test started-at="2022-07-11T16:32:06 IST" name="Default test" finished-at="2022-07-11T16:32:13 IST" duration-ms="7450">
+      <class name="KeyDriven.Runner">
+        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:KeyDriven.Runner@2cb2fc20]" started-at="2022-07-11T16:32:06 IST" name="setupClassName" finished-at="2022-07-11T16:32:06 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClassName -->
-        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:DVBDD.Runner@2cb2fc20]" started-at="2022-07-11T16:29:43 IST" name="BeforeMethod" finished-at="2022-07-11T16:29:43 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:KeyDriven.Runner@2cb2fc20]" started-at="2022-07-11T16:32:06 IST" name="BeforeMethod" finished-at="2022-07-11T16:32:06 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="testCases(java.lang.String)[pri:0, instance:DVBDD.Runner@2cb2fc20]" started-at="2022-07-11T16:29:43 IST" name="testCases" data-provider="path" finished-at="2022-07-11T16:29:50 IST" duration-ms="7141" status="PASS">
+        <test-method signature="testCases(java.lang.String)[pri:0, instance:KeyDriven.Runner@2cb2fc20]" started-at="2022-07-11T16:32:06 IST" name="testCases" data-provider="path" finished-at="2022-07-11T16:32:13 IST" duration-ms="7406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,22 +40,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCases -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:DVBDD.Runner@2cb2fc20]" started-at="2022-07-11T16:29:50 IST" name="AfterMethod" finished-at="2022-07-11T16:29:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:KeyDriven.Runner@2cb2fc20]" started-at="2022-07-11T16:32:13 IST" name="AfterMethod" finished-at="2022-07-11T16:32:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestCase11_TestCase3_Login status=SUCCESS method=Runner.testCases(java.lang.String)[pri:0, instance:DVBDD.Runner@2cb2fc20] output={null}]]]>
+                <![CDATA[[TestResult name=TestCase11_TestCase3_Login status=SUCCESS method=Runner.testCases(java.lang.String)[pri:0, instance:KeyDriven.Runner@2cb2fc20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:DVBDD.Runner@2cb2fc20]" started-at="2022-07-11T16:29:50 IST" name="AfterSuite" finished-at="2022-07-11T16:29:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:KeyDriven.Runner@2cb2fc20]" started-at="2022-07-11T16:32:13 IST" name="AfterSuite" finished-at="2022-07-11T16:32:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
-      </class> <!-- DVBDD.Runner -->
+      </class> <!-- KeyDriven.Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
