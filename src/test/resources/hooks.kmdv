@@ -1,0 +1,40 @@
+-----Hooks::BeforeTest-----
+
+@Tags={Tag4, Tag5}
+
+|test1-->	.{BeforeTest_Tag5}	
+|Open--> 	${constants.Url} 		:{chrome}
+
+----------BeforeTestEnd-------------
+
+
+-----Hooks::AfterTest-----
+
+@Tags={Tag4, Tag6}
+
+|Close-->
+|test1-->	.{AfterTest_Tag6}	
+
+
+----------AfterTestEnd-------------
+
+
+-----Hooks::BeforeTest-----
+
+@Tags={Tag6}
+
+|test1-->	.{BeforeTest_Tag6}	
+|Open--> 	${constants.Url} 		:{chrome}
+
+----------BeforeTestEnd-------------
+
+
+-----Hooks::AfterTest-----
+
+@Tags={Tag5}
+
+|Close-->
+|test1-->	.{AfterTest_Tag5}	
+
+
+----------AfterTestEnd-------------

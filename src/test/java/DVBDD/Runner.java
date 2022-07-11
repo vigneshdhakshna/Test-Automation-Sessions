@@ -2,7 +2,8 @@ package DVBDD;
 
 import org.testng.annotations.Test;
 
-import common.TestBase;
+import kmdvKEY.TestBase;
+
 
 
 public class Runner extends TestBase {
@@ -14,6 +15,4 @@ public class Runner extends TestBase {
 
 	}
 	
-	
-
 }

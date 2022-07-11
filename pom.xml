@@ -39,10 +39,10 @@
 
 		<dependency>
 			<groupId>org.KMDV</groupId>
-			<artifactId>KMDV-BDD</artifactId>
+			<artifactId>KMDV-KEY</artifactId>
 			<version>1.0.6</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/KMDV BDD.jar</systemPath>
+			<systemPath>${project.basedir}/KMDV KEY.jar</systemPath>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->

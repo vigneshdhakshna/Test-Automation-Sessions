@@ -1,12 +1,20 @@
 -----TestCase::TestCase11-----
 
 @Author={Vignesh}
-@Tags={Tag3}
+@Tags={Tag4, Tag5}
 
+|test1-->	.{TestCase5}	
 
-|Open--> 	:{chrome}				${constants.Url} 
-|Click--> 	${page3.searchBox123}
-|Click--> 	${page3.searchBox321}
-|Close-->
 
 ----------TestEnd-------------
+
+-----TestCase::TestCase12-----
+
+@Author={Vignesh}
+@Tags={Tag4, Tag6}
+
+
+|test1-->	.{TestCase6}	
+
+----------TestEnd-------------
+

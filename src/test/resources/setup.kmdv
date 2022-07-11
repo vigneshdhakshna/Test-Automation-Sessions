@@ -1,4 +1,4 @@
-PageDir ={src/test/resources/Pages}
-TestCaseDir ={src/test/resources/TestCases}
+PageDir ={Pages}
+TestCaseDir ={TestCases}
 Parallel ={1}
-Tags ={}
+Tags ={Tag5}
