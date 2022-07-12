@@ -1,0 +1,3 @@
+|Variable|	${Url}			#{https://www.google.com/}
+|Variable|	${Title}		#{google}
+|Variable|	${waitTime}		#{2}

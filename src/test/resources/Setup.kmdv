@@ -1,4 +1,4 @@
 PageDir ={Pages}
 TestCaseDir ={TestCases}
-Parallel ={2}
-Tags ={}
+Parallel ={1}
+Tags ={Tag6,Tag5}

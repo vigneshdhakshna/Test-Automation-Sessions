@@ -1,0 +1,3 @@
+|Find| 			${searchBox1} 		:{XPATH}		#{//input[@name='q']} 	
+|FindAll| 		${searchBox3} 		:{LINKTEXT}		#{linkNames1} 
+|Find| 			${searchBox2} 		:{ID}			#{id_123} 	

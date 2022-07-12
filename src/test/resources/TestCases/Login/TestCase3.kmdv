@@ -1,0 +1,21 @@
+-----TestCase::TestCase11-----
+
+@Author={Vignesh}
+@Tags={Tag7, Tag5}
+
+|Group1|
+|test1|		.{TestCase5}	
+|Group2|
+
+----------TestEnd-------------
+
+-----TestCase::TestCase12-----
+
+@Author={Vignesh}
+@Tags={Tag7, Tag6}
+
+
+|test1|		.{TestCase6}	
+
+----------TestEnd-------------
+

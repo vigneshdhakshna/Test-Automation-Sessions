@@ -1,0 +1,34 @@
+-----Hooks::BeforeTest-----
+
+
+|Open| 	${constants.Url} 		:{chrome}
+
+----------BeforeTestEnd-----
+
+
+-----Hooks::AfterTest-----
+
+
+|Close|
+
+
+----------AfterTestEnd-----
+
+
+-----Hooks::BeforeTest-----
+
+@Tags={Tag5}
+
+|test1|	.{BeforeTest_Tag5}	
+
+----------BeforeTestEnd-----
+
+
+-----Hooks::AfterTest-----
+
+@Tags={Tag6}
+
+|test1|	.{AfterTest_Tag6}	
+
+
+----------AfterTestEnd-----
