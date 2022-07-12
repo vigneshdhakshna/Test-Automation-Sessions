@@ -1,0 +1,4 @@
+PageDir ={Pages}
+TestCaseDir ={TestCases}
+Parallel ={2}
+Tags ={}
