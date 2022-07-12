@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-12T13:18:59 IST" name="Default suite" finished-at="2022-07-12T13:18:59 IST" duration-ms="69">
+  <suite started-at="2022-07-12T15:42:33 IST" name="Default suite" finished-at="2022-07-12T15:42:33 IST" duration-ms="38">
     <groups>
     </groups>
-    <test started-at="2022-07-12T13:18:59 IST" name="Default test" finished-at="2022-07-12T13:18:59 IST" duration-ms="69">
+    <test started-at="2022-07-12T15:42:33 IST" name="Default test" finished-at="2022-07-12T15:42:33 IST" duration-ms="38">
       <class name="KeyDriven.Runner">
-        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:KeyDriven.Runner@13bc8645]" started-at="2022-07-12T13:18:59 IST" name="setupClassName" finished-at="2022-07-12T13:18:59 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:KeyDriven.Runner@13bc8645]" started-at="2022-07-12T15:42:33 IST" name="setupClassName" finished-at="2022-07-12T15:42:33 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClassName -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:KeyDriven.Runner@13bc8645]" started-at="2022-07-12T13:18:59 IST" name="AfterSuite" finished-at="2022-07-12T13:18:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:KeyDriven.Runner@13bc8645]" started-at="2022-07-12T15:42:33 IST" name="AfterSuite" finished-at="2022-07-12T15:42:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->

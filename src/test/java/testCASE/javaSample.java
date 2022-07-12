@@ -9,17 +9,6 @@ import java.util.Set;
 public class javaSample {
 
 	public static void main(String[] args) {
-		int arr1[] = { 78, 34, 2, -3, 90, 34, -1, -4, 6, 55, 20, -65 };
-		// {-1,1,3,-4,6,20,34,34,55,-65,78,90}
-		// sortArrayM(arr1);
-//		int a = 1;
-//		System.out.println(a);
-//
-//		System.out.println(a++);
-//		System.out.println(++a);
-//
-//		System.out.println(a--);
-//		System.out.println(--a);
 
 		compare2Strings("fun Hello fun", "fun W fun");
 
