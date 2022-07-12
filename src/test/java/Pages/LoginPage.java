@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import util.Base.PageBase;
+import kmdv.Base.PageBase;
 
 public class LoginPage extends PageBase {
 	

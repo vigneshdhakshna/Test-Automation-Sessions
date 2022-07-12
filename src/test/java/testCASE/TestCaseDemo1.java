@@ -9,14 +9,14 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
-import util.Base.TestBase;
+import kmdv.Base.TestBase;
 
 public class TestCaseDemo1 extends TestBase{
 	
 	
 	@Test
 	public void demoWEB() throws Throwable {
-		FileOutputStream fout = new FileOutputStream(Path.fileFromExcelTestData("sample.xlsx"));
+		FileOutputStream fout = new FileOutputStream(pathRoot.fileFromExcelTestData("sample.xlsx"));
 		XSSFWorkbook xbook = new XSSFWorkbook();
 		XSSFSheet sheet = xbook.createSheet();
 		XSSFRow row = sheet.createRow(0);

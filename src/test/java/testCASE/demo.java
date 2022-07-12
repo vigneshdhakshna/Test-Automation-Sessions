@@ -3,10 +3,10 @@ package testCASE;
 import org.testng.annotations.Test;
 
 import Pages.LoginPage;
-import config.TestNG.Author;
-import util.Base.TestBase;
-import util.Common.RestAPIUtil;
-import util.Common.SeleniumUtil;
+import kmdv.Base.TestBase;
+import kmdv.Common.RestAPIUtil;
+import kmdv.Common.SeleniumUtil;
+import kmdv.config.TestNG.Author;
 
 public class demo extends TestBase {
 
@@ -18,6 +18,7 @@ public class demo extends TestBase {
 		
 		new LoginPage().Login();
 		selenium.Log("Logged in successfully");
+		
     }
 
 	@Author(Name = "Dhakshna")
