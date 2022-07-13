@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-12T17:53:58 IST" name="Default suite" finished-at="2022-07-12T17:54:08 IST" duration-ms="9512">
+  <suite started-at="2022-07-13T19:22:16 IST" name="Default suite" finished-at="2022-07-13T19:22:26 IST" duration-ms="9914">
     <groups>
     </groups>
-    <test started-at="2022-07-12T17:53:58 IST" name="Default test" finished-at="2022-07-12T17:54:08 IST" duration-ms="9512">
+    <test started-at="2022-07-13T19:22:16 IST" name="Default test" finished-at="2022-07-13T19:22:26 IST" duration-ms="9914">
       <class name="cesAuto.RunnerCES">
-        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:53:58 IST" name="setupClassName" finished-at="2022-07-12T17:53:58 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setupClassName(org.testng.ITestContext)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:16 IST" name="setupClassName" finished-at="2022-07-13T19:22:16 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClassName -->
-        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:53:58 IST" name="BeforeMethod" finished-at="2022-07-12T17:53:58 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:16 IST" name="BeforeMethod" finished-at="2022-07-13T19:22:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="testCases(java.lang.String)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:53:58 IST" name="testCases" data-provider="path" finished-at="2022-07-12T17:54:03 IST" duration-ms="5213" status="PASS">
+        <test-method signature="testCases(java.lang.String)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:16 IST" name="testCases" data-provider="path" finished-at="2022-07-13T19:22:24 IST" duration-ms="7402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCases -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:54:03 IST" name="AfterMethod" finished-at="2022-07-12T17:54:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:24 IST" name="AfterMethod" finished-at="2022-07-13T19:22:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:54:03 IST" name="BeforeMethod" finished-at="2022-07-12T17:54:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BeforeMethod([Ljava.lang.Object;)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:24 IST" name="BeforeMethod" finished-at="2022-07-13T19:22:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method signature="testCases(java.lang.String)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:54:03 IST" name="testCases" data-provider="path" finished-at="2022-07-12T17:54:08 IST" duration-ms="4249" status="PASS">
+        <test-method signature="testCases(java.lang.String)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:24 IST" name="testCases" data-provider="path" finished-at="2022-07-13T19:22:26 IST" duration-ms="2434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +73,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCases -->
-        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:54:08 IST" name="AfterMethod" finished-at="2022-07-12T17:54:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AfterMethod(org.testng.ITestResult)[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:26 IST" name="AfterMethod" finished-at="2022-07-13T19:22:26 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-12T17:54:08 IST" name="AfterSuite" finished-at="2022-07-12T17:54:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:cesAuto.RunnerCES@723e88f9]" started-at="2022-07-13T19:22:26 IST" name="AfterSuite" finished-at="2022-07-13T19:22:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
