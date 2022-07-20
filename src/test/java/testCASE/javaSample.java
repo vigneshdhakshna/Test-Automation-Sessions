@@ -1,8 +1,11 @@
 package testCASE;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -10,8 +13,33 @@ public class javaSample {
 
 	public static void main(String[] args) {
 
-		compare2Strings("fun Hello fun", "fun W fun");
+		maxLetter("aaabbccc");
 
+	}
+	
+	public static void maxLetter(String name) {
+		char[] charArray = name.toCharArray();
+		List<Character> listC = new ArrayList<Character>();
+		Set<Character> asSet = new HashSet<Character>();
+
+	    for (char c : charArray) {
+	        listC.add(c);
+	        asSet.add(c);
+	    }
+
+		int max = 0;
+		for (char c : asSet) {
+			if ( max < Collections.frequency(listC, c)) {
+				max = Collections.frequency(listC, c);
+			}
+		}
+		
+		for (char c : asSet) {
+			if ( max == Collections.frequency(listC, c)) {
+				System.out.println(c+" = "+max);
+			}
+		}
+		
 	}
 
 	public static void compare2Strings(String s1, String s2) {
