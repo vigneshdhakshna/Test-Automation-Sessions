@@ -18,7 +18,7 @@ public class sampleAutoPrac {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("http://automationpractice.com/index.php");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//a[@href=\"http://automationpractice.com/index.php?controller=my-account\"]")).click();
+        driver.findElement(By.xpath("//a[@href='http://automationpractice.com/index.php?controller=my-account\"]")).click();
         driver.findElement(By.xpath("//input[@id=\"email\"]")).sendKeys("bhanu3@gmail.com");
         driver.findElement(By.xpath("//input[@id=\"passwd\"]")).sendKeys("May14");
         driver.findElement(By.xpath("//button[@id=\"SubmitLogin\"]")).click();
