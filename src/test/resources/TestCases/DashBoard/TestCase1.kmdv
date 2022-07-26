@@ -20,8 +20,8 @@
 
 
 |Click| ${page1.searchBox3}
-|test1|	.{TestCase12}	
-|test1|	.{Custom1}	.{Custom2}
-|test1|	.{Custom1}	.{Custom2}	.{Custom3}
+|test1|	#{TestCase12}	
+|test1|	#{Custom1}	#{Custom2}
+|test1|	#{Custom1}	#{Custom2}	#{Custom3}
 
 ----------TestEnd-------------

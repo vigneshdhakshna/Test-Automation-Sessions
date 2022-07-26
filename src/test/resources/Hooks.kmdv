@@ -19,7 +19,7 @@
 
 @Tags={Tag5}
 
-|test1|	.{BeforeTest_Tag5}	
+|test1|	#{BeforeTest_Tag5}	
 
 ----------BeforeTestEnd-----
 
@@ -28,7 +28,7 @@
 
 @Tags={Tag6}
 
-|test1|	.{AfterTest_Tag6}	
+|test1|	#{AfterTest_Tag6}	
 
 
 ----------AfterTestEnd-----

@@ -1,17 +1,17 @@
------Steps::Group1-----
+-----Group::Group1-----
 
 
-|test1-->	.{Group1::Step1}	
-|test1-->	.{Group1::Step2}	
+|test1|	#{Group1::Step1}	
+|test1|	#{Group1::Step2}	
 
-----------StepsEnd-----
+----------GroupEnd-----
 
 
 
------Steps::Group2-----
+-----Group::Group2-----
 
-|test1-->	.{Group2::Step1}	
-|test1-->	.{Group2::Step2}
+|test1|	#{Group2::Step1}	
+|test1|	#{Group2::Step2}
 
-----------StepsEnd-----
+----------GroupEnd-----
 
