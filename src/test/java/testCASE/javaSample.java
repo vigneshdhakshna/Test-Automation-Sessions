@@ -13,7 +13,8 @@ public class javaSample {
 
 	public static void main(String[] args) {
 
-		maxLetter("aaabbccc");
+		int[] a = new int[] {-5, 1, 0, -2, 3};
+		simpleSort(a);
 
 	}
 	
@@ -187,15 +188,8 @@ public class javaSample {
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
-				int a = arr[i], b = arr[j];
-				if (a < 0) {
-					a = a * -1;
-				}
-				if (b < 0) {
-					b = b * -1;
-				}
 				int tmp = 0;
-				if (a > b) {
+				if (Math.abs(arr[i]) > Math.abs(arr[j])) {
 					tmp = arr[i];
 					arr[i] = arr[j];
 					arr[j] = tmp;
