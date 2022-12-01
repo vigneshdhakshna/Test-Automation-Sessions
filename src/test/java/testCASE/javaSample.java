@@ -6,15 +6,17 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class javaSample {
 
 	public static void main(String[] args) {
 
-		int[] a = new int[] {-5, 1, 0, -2, 3};
-		simpleSort(a);
+		int[] a = new int[] {-2, -4, 1, 3, -6, 5};
+		sortArrayMAP(a);
 
 	}
 	
@@ -146,7 +148,7 @@ public class javaSample {
 
 	}
 
-	public static void sortArray(int[] arr) {
+	public static void sortArray2For(int[] arr) {
 
 		int[] tArr = arr.clone();
 		for (int i = 0; i < arr.length; i++) {
@@ -183,8 +185,20 @@ public class javaSample {
 		}
 
 	}
+	
+	public static void sortArrayMAP(int[] arr) {
+		TreeMap<Integer,Integer> MapArr = new TreeMap<Integer,Integer>();
+		for (int ar : arr) {
+			MapArr.put(Math.abs(ar), ar);
+		}
+		
+		for(Entry<Integer, Integer> Entry : MapArr.entrySet()) {
+			System.out.println(Entry.getValue());
+		}
+	}
 
-	public static void simpleSort(int[] arr) {
+
+	public static void sortArrayABS(int[] arr) {
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
@@ -202,34 +216,6 @@ public class javaSample {
 		}
 	}
 
-	public static void sortArrayM(int[] arr) {
-
-		int[] tArr = arr.clone();
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] < 0) {
-				arr[i] = arr[i] * -1;
-			}
-		}
-
-		Arrays.sort(arr);
-
-		for (int i = 0; i < tArr.length; i++) {
-			if (tArr[i] < 0) {
-
-				for (int j = 0; j < arr.length; j++) {
-					if (tArr[i] * -1 == arr[j]) {
-						arr[j] = arr[j] * -1;
-						break;
-					}
-				}
-			}
-		}
-
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
-		}
-
-	}
 
 	public static void factorial(int num) {
 		int temp = 1;
